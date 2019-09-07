@@ -44,10 +44,10 @@ public class AdminGui extends Application {
 	private Node TopOfTestCenter() {
 		
 		HBox hbox =new HBox();
-		Text t1= new Text("                                                                                                      ");
+		Text t1= new Text("                                                                                                              ");
 		Text t = new Text("Testcenter                              ");
 		Button btn = new Button();
-		 btn.setText("'Hello World'");
+		 btn.setText("'Log Out'");
 		hbox.setAlignment(Pos.CENTER);
 		t.setFill(Color.DARKGREEN);
 		t.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
