@@ -32,8 +32,8 @@ public class AdminGui extends Application {
 	private Node RightOfTestCenter() {
 		HBox hbox =new HBox();
 		Button btn = new Button();
-		 btn.setText("'Hello World'");
-		 hbox.setAlignment(Pos.TOP_RIGHT);
+		btn.setText("'Hello World'");
+		hbox.setAlignment(Pos.TOP_RIGHT);
 		//t.setFont( Font.font( "Calibri", FontWeight.EXTRA_BOLD, 40 ) );
 		
 		hbox.getChildren().addAll(btn);
@@ -44,7 +44,7 @@ public class AdminGui extends Application {
 	private Node TopOfTestCenter() {
 		
 		HBox hbox =new HBox();
-		Text t = new Text("Testcenter");
+		Text t = new Text("Testcenter für die SRH-Hochschule");
 		hbox.setAlignment(Pos.CENTER);
 		t.setFill(Color.DARKGREEN);
 		t.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
