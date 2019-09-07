@@ -9,7 +9,12 @@ public class TestProject {
 		System.out.println("was geht ab12345");
 		System.out.println("noob");
 		System.out.println("noe");
-		System.out.println("jetzt mï¿½sste es klappen ");
+
+		System.out.println("jetzt müsste es klappen ");
+		
+		
+		System.out.println("finis");
+		
 	}
 
 }
