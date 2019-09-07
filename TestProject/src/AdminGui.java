@@ -44,7 +44,7 @@ public class AdminGui extends Application {
 	private Node TopOfTestCenter() {
 		
 		HBox hbox =new HBox();
-		Text t = new Text("Testcenter für die SRH-Hochschule");
+		Text t = new Text("Testcenter");
 		hbox.setAlignment(Pos.CENTER);
 		t.setFill(Color.DARKGREEN);
 		t.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
