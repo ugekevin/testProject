@@ -11,7 +11,7 @@ public class TestProject {
 		System.out.println("jetzt müsste es klappen ");
 		
 		
-		System.out.println("finishh");
+		System.out.println("finis");
 		
 	}
 
