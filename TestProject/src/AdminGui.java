@@ -20,7 +20,7 @@ public class AdminGui extends Application {
 
 	BorderPane bp = new BorderPane();
 		
-	bp.setRight(RightOfTestCenter());
+	//bp.setRight(RightOfTestCenter());
 		bp.setTop(TopOfTestCenter());
 		Scene scene = new Scene(bp,900,600);
 		primaryStage.setScene(scene);
@@ -28,28 +28,31 @@ public class AdminGui extends Application {
 		primaryStage.show();
 
 	}
-
+/*
 	private Node RightOfTestCenter() {
 		HBox hbox =new HBox();
 		Button btn = new Button();
-		btn.setText("'Hello World'");
-		hbox.setAlignment(Pos.TOP_RIGHT);
+		 btn.setText("'Hello World'");
+		 hbox.setAlignment(Pos.TOP_RIGHT);
 		//t.setFont( Font.font( "Calibri", FontWeight.EXTRA_BOLD, 40 ) );
 		
 		hbox.getChildren().addAll(btn);
 		return hbox;
 	
 	}
-
+*/
 	private Node TopOfTestCenter() {
 		
 		HBox hbox =new HBox();
-		Text t = new Text("Testcenter");
+		Text t1= new Text("                                                                                                              ");
+		Text t2 = new Text("Testcenter                              ");
+		Button btn = new Button();
+		 btn.setText("'Log Out'");
 		hbox.setAlignment(Pos.CENTER);
-		t.setFill(Color.DARKGREEN);
-		t.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
+		t2.setFill(Color.DARKGREEN);
+		t2.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
 		
-		hbox.getChildren().addAll(t);
+		hbox.getChildren().addAll(t1,t2, btn);
 		return hbox;
 	}
 
