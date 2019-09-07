@@ -1,8 +1,12 @@
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 public class StudentGui extends Application {
@@ -22,8 +26,12 @@ public class StudentGui extends Application {
 
 	private Node TopOfTestCenter() {
 		HBox hbox =new HBox();
+		Text t = new Text("Testcenter");
+		hbox.setAlignment(Pos.CENTER);
+		t.setFont( Font.font( "Calibri", FontWeight.NORMAL, 30 ) );
 		
-		return null;
+		hbox.getChildren().addAll(t);
+		return hbox;
 	}
 
 }
