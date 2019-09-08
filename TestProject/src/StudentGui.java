@@ -50,7 +50,7 @@ public class StudentGui extends Application {
 		hbox.setAlignment(Pos.CENTER);
 		t2.setFill(Color.DARKGREEN);
 		t2.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
-		
+		System.out.println("HI");
 		hbox.getChildren().addAll(t1,t2, btn);
 		return hbox;
 	}

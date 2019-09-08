@@ -9,6 +9,7 @@ public class TestProject {
 	//	Application.launch(StudentGui.class, args);
 	//	Application.launch(ProfGui.class, args);
 		Application.launch(AdminGui.class, args);
+		System.out.println("Hi");
 	}
 
 }
