@@ -42,7 +42,6 @@ public class StudentGui extends Application {
 	}
 */
 	private Node TopOfTestCenter() {
-		
 		HBox hbox =new HBox();
 		Text t1= new Text("                                                            ");
 		Text t2 = new Text("Testcenter                              ");
