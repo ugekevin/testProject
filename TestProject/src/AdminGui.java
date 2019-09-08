@@ -54,6 +54,7 @@ public class AdminGui extends Application {
 		t2.setFill(Color.DARKGREEN);
 		t2.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
 		
+		
 		hbox.getChildren().addAll(t1,t2, btn);
 		return hbox;
 	}
