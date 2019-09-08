@@ -44,7 +44,9 @@ public class AdminGui extends Application {
 	private Node TopOfTestCenter() {
 		
 		HBox hbox =new HBox();
-		Text t1= new Text("                                                                                                              ");
+		Text t1= new Text("                    "
+				+ "                                                                          "
+				+ "                ");
 		Text t2 = new Text("Testcenter                              ");
 		Button btn = new Button();
 		 btn.setText("'Log Out'");
