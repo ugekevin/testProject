@@ -1,7 +1,10 @@
+
+
 import javafx.application.Application;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.paint.Color;
@@ -14,9 +17,10 @@ public class StudentGui extends Application {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+
+	BorderPane bp = new BorderPane();
 		
-		BorderPane bp = new BorderPane();
-		
+	//bp.setRight(RightOfTestCenter());
 		bp.setTop(TopOfTestCenter());
 		Scene scene = new Scene(bp,900,600);
 		primaryStage.setScene(scene);
@@ -24,15 +28,31 @@ public class StudentGui extends Application {
 		primaryStage.show();
 
 	}
-
-	private Node TopOfTestCenter() {
+/*
+	private Node RightOfTestCenter() {
 		HBox hbox =new HBox();
-		Text t = new Text("Testcenter");
-		hbox.setAlignment(Pos.CENTER);
-		t.setFill(Color.DARKGREEN);
-		t.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
+		Button btn = new Button();
+		 btn.setText("'Hello World'");
+		 hbox.setAlignment(Pos.TOP_RIGHT);
+		//t.setFont( Font.font( "Calibri", FontWeight.EXTRA_BOLD, 40 ) );
 		
-		hbox.getChildren().addAll(t);
+		hbox.getChildren().addAll(btn);
+		return hbox;
+	
+	}
+*/
+	private Node TopOfTestCenter() {
+		
+		HBox hbox =new HBox();
+		Text t1= new Text("                                                            ");
+		Text t2 = new Text("Testcenter                              ");
+		Button btn = new Button();
+		 btn.setText("'Log Out'");
+		hbox.setAlignment(Pos.CENTER);
+		t2.setFill(Color.DARKGREEN);
+		t2.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
+		
+		hbox.getChildren().addAll(t1,t2, btn);
 		return hbox;
 	}
 
