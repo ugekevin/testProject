@@ -14,6 +14,7 @@ public class TestProject {
 	//	Application.launch(ProfGui.class, args);
 
 		Application.launch(AdminGui.class, args);
+		System.out.println("Hi");
 	}
 
 }
