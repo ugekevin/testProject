@@ -24,8 +24,8 @@ public class ProjectGui extends Application {
 		this.primaryStage = primaryStage;
 		primaryStage.setScene(studentGuiScene);
 		primaryStage.setTitle("UniCycle");
-		primaryStage.setHeight(720);
-		primaryStage.setWidth(1280);
+		primaryStage.setHeight(750);
+		primaryStage.setWidth(1100);
 		primaryStage.setResizable(false);
 		primaryStage.show();
 
