@@ -13,34 +13,12 @@ import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class StudentGui extends Application {
+public class StudentGui extends BorderPane {
 
-	@Override
-	public void start(Stage primaryStage) throws Exception {
-
-	BorderPane bp = new BorderPane();
-		
-	//bp.setRight(RightOfTestCenter());
-		bp.setTop(TopOfTestCenter());
-		Scene scene = new Scene(bp,900,600);
-		primaryStage.setScene(scene);
-		primaryStage.setTitle("TestCenter");
-		primaryStage.show();
-
+	public StudentGui() {
+		setTop(TopOfTestCenter());
 	}
-/*
-	private Node RightOfTestCenter() {
-		HBox hbox =new HBox();
-		Button btn = new Button();
-		 btn.setText("'Hello World'");
-		 hbox.setAlignment(Pos.TOP_RIGHT);
-		//t.setFont( Font.font( "Calibri", FontWeight.EXTRA_BOLD, 40 ) );
-		
-		hbox.getChildren().addAll(btn);
-		return hbox;
-	
-	}
-*/
+
 	private Node TopOfTestCenter() {
 		HBox hbox =new HBox();
 		Text t1= new Text("                                                            ");
