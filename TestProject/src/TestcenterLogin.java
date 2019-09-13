@@ -86,7 +86,7 @@ public class TestcenterLogin extends BorderPane{
 		
 		if(rs.next()) {
 				
-			JOptionPane.showMessageDialog(null, "Confirm", "Logged in", 1);
+		 JOptionPane.showMessageDialog(null, "Confirm", "Logged in", 1);
 	
 		}else {
 		//zeigt fehler
