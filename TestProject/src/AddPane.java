@@ -78,15 +78,15 @@ public class AddPane extends BorderPane {
 		HBox hbox = new HBox();
 		hbox.setSpacing(60);
 		
-		Button btnHinzufügen = new Button("Hinzufügen");
-		btnHinzufügen.setStyle("-fx-background-color: Green");
-		btnHinzufügen.setTextFill(Color.WHITE);
+		Button btnHinzufuegen = new Button("Hinzufuegen");
+		btnHinzufuegen.setStyle("-fx-background-color: Green");
+		btnHinzufuegen.setTextFill(Color.WHITE);
 		
-		Button btnLöschen = new Button("Löschen");
-		btnLöschen.setStyle("-fx-background-color: Red");
-		btnLöschen.setTextFill(Color.WHITE);
+		Button btnLoeschen = new Button("Loeschen");
+		btnLoeschen.setStyle("-fx-background-color: Red");
+		btnLoeschen.setTextFill(Color.WHITE);
 		
-		hbox.getChildren().addAll(btnHinzufügen,btnLöschen);
+		hbox.getChildren().addAll(btnHinzufuegen,btnLoeschen);
 		return hbox;
 	}
 
