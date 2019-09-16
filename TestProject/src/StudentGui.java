@@ -1,6 +1,5 @@
 
 
-import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -8,7 +7,6 @@ import javafx.event.EventHandler;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
@@ -20,11 +18,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 
 public class StudentGui extends BorderPane {
 
 	private Button startTest;
+	private Button logout;
 	public StudentGui() {
 		
 			
@@ -38,12 +36,14 @@ public class StudentGui extends BorderPane {
 			HBox hbox =new HBox();
 			Text t1= new Text("                                                            ");
 			Text t2 = new Text("Testcenter                              ");
-			Button btn = new Button();
-			 btn.setText("'Log Out'");
+			logout = new Button();
+			 logout.setText("'Log Out'");
+			 logout.setOnAction(ev -> startLogoutAction(null));
+			 
 			hbox.setAlignment(Pos.CENTER);
 			t2.setFill(Color.DARKGREEN);
 			t2.setFont( Font.font( "Calibri", FontWeight.BLACK, 40 ) );
-			hbox.getChildren().addAll(t1,t2, btn);
+			hbox.getChildren().addAll(t1,t2, logout);
 			return hbox;
 		}
 
@@ -141,7 +141,11 @@ public class StudentGui extends BorderPane {
 		
 		}
 		public void startTestAction(EventHandler<ActionEvent> eventHandler) {
-			startTest.setOnAction(eventHandler);		
+			startTest.setOnAction(eventHandler);
+		}
+		
+		public void startLogoutAction(EventHandler<ActionEvent>eventhandler) {
+			logout.setOnAction(eventhandler);
 		}
 	}
 
