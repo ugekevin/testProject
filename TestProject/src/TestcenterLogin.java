@@ -17,6 +17,7 @@ import javafx.scene.text.Font;
 
 public class TestcenterLogin extends BorderPane{
 
+	EventHandler<ActionEvent> eventHandlerSubmit;
 	StudentGui studentgui;
 	Scene testscene;
 	private Button submit;
@@ -65,7 +66,6 @@ public class TestcenterLogin extends BorderPane{
 
 			PreparedStatement st;
 			ResultSet rs;
-
 			//wir holen uns den Text aus den TextAreas
 
 			String user = username.getText();
@@ -83,14 +83,19 @@ public class TestcenterLogin extends BorderPane{
 				st.setString(2, pass);
 
 				rs = st.executeQuery();
+				
 
 				if(rs.next()) {
 					
-					submit.setOnAction(ev -> );
+					System.out.println("du bist drin");
+				
+					
+					
+					eventHandlerSubmit.handle(null);
+					
 
 				}else {
-					//zeigt fehler
-					JOptionPane.showMessageDialog(null, "invalid logindata", "Login failed", 2);
+					System.out.println("bist nicht drin");
 				}
 
 			} catch (SQLException e) {
@@ -104,5 +109,10 @@ public class TestcenterLogin extends BorderPane{
 		vbox.getChildren().addAll(loginPane);
 		return vbox;
 
+	}
+	
+	public void startsubmitaction(EventHandler<ActionEvent> eventHandler) {
+		
+		this.eventHandlerSubmit = eventHandler;
 	}
 }

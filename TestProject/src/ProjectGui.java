@@ -25,6 +25,7 @@ public class ProjectGui extends Application {
 		quizScene = new Scene(quizGui);
 		
 		studentGui.startLogoutAction(ev -> primaryStage.setScene(quizScene));
+		loginGui.startsubmitaction(ev -> primaryStage.setScene(studentGuiScene));
 		studentGui.startLogoutAction(ev -> primaryStage.setScene(loginGuiScene));
 		
 		
