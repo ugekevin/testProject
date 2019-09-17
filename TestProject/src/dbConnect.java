@@ -8,7 +8,7 @@ public class  dbConnect{
 		
 
 				try {
-					con = DriverManager.getConnection("jdbc:mysql://localhost/mydb", "root" , "bfwhd");
+					con = DriverManager.getConnection("jdbc:mysql://localhost/DBT1" + "?useLegacyDatetimeCode=false&serverTimezone=UTC", "jochen", "test");
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
